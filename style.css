@@ -1,4 +1,4 @@
-*{box-sizing: border-box; margin: 0; border: 0;}
+*{box-sizing: border-box; margin: 0; border: 0; position: relative;}
 html{
     scroll-behavior: smooth;
 }
@@ -12,8 +12,8 @@ html{
     color: var(--lightFont);
 }
 .hero{
+    z-index: 1;
     overflow: hidden;
-    position: relative;
     width: 100%;
     height: 100vh;
     background-image: url(./images/background.png);
@@ -29,12 +29,10 @@ html{
         color: var(--lightFont);
         font-size: 3rem;
         cursor: pointer;
-        position: relative;
         z-index: 2;  
     }
 
 .deforest{
-    position: relative;
     width: 100%;
     background: rgb(168, 138, 83);
     display: flex;
@@ -51,7 +49,6 @@ html{
     }
     .image{
         width: 100%;
-        position: relative;
         max-width: 1000px;
         margin: auto;
     }
