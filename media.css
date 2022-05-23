@@ -1,0 +1,20 @@
+@media only screen and (min-width:500px)
+{
+    #right_tree{
+        width: 50vw;
+        opacity: 1;
+        right: -15em;
+        z-index: 1;
+    }
+    #left_fern{
+        width: 20vw;
+        opacity: 1;
+    }
+    #right_fern{
+        width: 20vw;
+        opacity: 1;
+    }
+    #tucan2{
+        display: block;
+    }
+}

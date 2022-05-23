@@ -1,0 +1,32 @@
+.hero img, .second img{
+    display: block;
+    position: absolute;
+}
+#right_tree{
+    width: 90vw;
+    right: -20vw;
+    transform: rotateZ(-20deg);
+    opacity: .5;
+}
+#left_fern{
+    width: 60vw;
+    left: 0;
+    top: 0;
+    opacity: .5;
+}
+#tucan1{
+    width: 15rem;
+    left: 10vw;
+    bottom: -5rem;
+}
+#tucan2{
+    width: 15rem;
+    right: -8rem;
+    display: none;
+}
+#right_fern{
+    right: 0;
+    width: 30vw;
+    top: 0;
+    opacity: 0.5;
+}
