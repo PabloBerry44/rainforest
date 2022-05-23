@@ -1,21 +1,17 @@
 *{box-sizing: border-box; margin: 0; border: 0;}
 html{
-    overflow-x: hidden;
-    scrollbar-width: none;
     scroll-behavior: smooth;
 }
 :root{
-    --lightFont: rgba(255, 255, 255, 0.664);
+    --lightFont: rgb(255, 240, 213);
     --greenBackground: rgb(0, 63, 0);
-}
-::-webkit-scrollbar{
-    display: none;
 }
 ::selection{
     background: var(--greenBackground);
     color: var(--lightFont);
 }
 .hero{
+    overflow: hidden;
     position: relative;
     width: 100%;
     height: 100vh;
