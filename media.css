@@ -16,10 +16,36 @@
     #tucan2{
         display: block;
     }
+    .deforest{
+        padding: 2em;
+        gap: 2em;
+    }
+        .text{
+            font-size: 2rem;
+            width: 100%;
+        }
+        .image{
+            width: 100%;
+            position: relative;
+        }
 }
-@media only screen and (min-width:1000px)
+@media only screen and (min-width:1200px)
 {
     #right_tree{
         width: 50vw;
     }
+    .deforest{
+        padding: 2em;
+        gap: 2em;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+        .text{
+            font-size: 2rem;
+            width: 50%;
+        }
+        .image{
+            width: 50%;
+            position: relative;
+        }
 }
