@@ -25,6 +25,9 @@ html{
     justify-content: center;
     align-items: center;
 }
+    .hero a:link, .hero a:visited, .hero a.hover, .hero a.active{
+        text-decoration: none;
+    }
     .hero h1{
         color: var(--lightFont);
         font-size: 3rem;
