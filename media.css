@@ -17,12 +17,12 @@
         display: block;
     }
     .deforest{
-        padding: 2em;
+        padding: 5em;
         gap: 2em;
     }
-        .text{
-            font-size: 2rem;
-            width: 100%;
+        p{
+            font-size: 1.3rem;
+            line-height: 2em;
         }
         .image{
             width: 100%;
@@ -35,17 +35,15 @@
         width: 50vw;
     }
     .deforest{
-        padding: 2em;
-        gap: 2em;
+        padding: 10rem;
         flex-wrap: nowrap;
         align-items: center;
     }
-        .text{
-            font-size: 2rem;
-            width: 50%;
+        h2{
+            margin-bottom: 3rem;
         }
-        .image{
-            width: 50%;
-            position: relative;
+        p{
+            font-size: 1.7rem;
+            line-height: 1.9em;
         }
 }

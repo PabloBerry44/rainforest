@@ -4,7 +4,7 @@ html{
 }
 :root{
     --lightFont: rgb(255, 240, 213);
-    --darkFont: rgb(255, 240, 213);
+    --darkFont: rgb(44, 44, 44);
     --greenBackground: rgb(0, 63, 0);
 }
 ::selection{
@@ -34,29 +34,35 @@ html{
 
 .deforest{
     width: 100%;
-    background: rgb(168, 138, 83);
+    background: rgb(255, 236, 200);
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    padding: 1em;
+    padding: 1.8em;
 }
-    .text{
-        padding: 1em;
-        color: var(--lightFont);
-        font-size: 1.4rem;
+    h2{
+        margin-bottom: 1em;
+        font-size: 2rem;
+    }
+    p{
+        color: var(--darkFont);
+        font-size: 1.3rem;
+        line-height: 2em;
         width: 100%;
         text-align: justify;
+        max-width: 1200px;
     }
-    .image{
+.parallax{
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 6 / 5;
+}
+    .parallax img{
         width: 100%;
-        max-width: 1000px;
         margin: auto;
-    }
-    .image img{
-        width: 100%;
-        box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.21);
-        border: 2px dashed black;
+        z-index: 3;
     }
 footer{
-    height: 50vh;
+    height: 100vh;
+    background: yellowgreen;
 }
