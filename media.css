@@ -13,10 +13,7 @@
     #right_fern{
         display: none;
     }
-    #tucan2{
-        display: block;
-    }
-    .deforest{
+    .text{
         padding: 5em;
         gap: 2em;
     }
@@ -29,15 +26,20 @@
             position: relative;
         }
 }
+@media only screen and (min-width:1000px)
+{
+    #tucan2{
+        display: block;
+    }
+}
 @media only screen and (min-width:1200px)
 {
     #right_tree{
         width: 50vw;
     }
-    .deforest{
+    .text{
         padding: 10rem;
         flex-wrap: nowrap;
-        align-items: center;
     }
         h2{
             margin-bottom: 3rem;

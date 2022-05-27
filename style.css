@@ -1,4 +1,5 @@
-*{box-sizing: border-box; margin: 0; border: 0; position: relative;}
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit&display=swap');
+*{box-sizing: border-box; margin: 0; border: 0; position: relative; font-family: 'Tiro Devanagari Sanskrit', serif;}
 html{
     scroll-behavior: smooth;
 }
@@ -22,8 +23,9 @@ html{
     justify-content: center;
     align-items: center;
 }
-    .hero a:link, .hero a:visited, .hero a.hover, .hero a.active{
+    a:link, a:visited, a.hover, a.active{
         text-decoration: none;
+        color: unset;
     }
     .hero h1{
         color: var(--lightFont);
@@ -31,26 +33,31 @@ html{
         cursor: pointer;
         z-index: 2;  
     }
-
-.deforest{
+.text{
     width: 100%;
-    background: rgb(255, 236, 200);
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
     padding: 1.8em;
+    padding-top: 2.5em;
+    border-top: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
+
 }
-    h2{
+    .text h2{
         margin-bottom: 1em;
         font-size: 2rem;
     }
-    p{
-        color: var(--darkFont);
+    .text p, .text ul{
         font-size: 1.3rem;
-        line-height: 2em;
+        line-height: 1.75em;
         width: 100%;
         text-align: justify;
         max-width: 1200px;
+    }
+    .text ul{
+        text-align: unset;
+        margin-left: 1em;
     }
 .parallax{
     margin: auto;
@@ -64,7 +71,45 @@ html{
         width: 2000px;
         top: 50%;
     }
-footer{
-    height: 100vh;
-    background: rgb(42, 105, 0);
+.light{
+    background: rgb(255, 236, 200);
+    color: var(--darkFont);
 }
+.dark{
+    background: rgb(80, 57, 15);
+    color: var(--lightFont);
+}
+footer{
+    background: rgb(0, 0, 0);
+    color: var(--lightFont);
+}
+footer div{
+    border-left: 2px solid var(--darkFont);
+    padding-left: 1em;
+}
+    footer a::after{
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--lightFont);
+        transition: 300ms
+    }
+    footer a:hover::after{
+        width: 100%;
+    }
+    .footer{
+        justify-content: initial;
+        align-items: initial;
+    }
+    #tucan2{
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1) translateY(50%);
+        position: absolute;
+        bottom: 50%;
+        right: 5rem;
+        width: 15rem;
+        display: none;
+    }
