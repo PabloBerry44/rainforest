@@ -15,15 +15,11 @@ function Animation()
       right_tree.style.transform = 'translateX(' +positionY*0.01+ 'em) rotateZ(-20deg)'
       left_fern.style.transform = 'translateX(' +positionY*(-0.01)+ 'em)'
 
-      let heig = photo.clientHeight/3
-      photo.style.bottom = heig+'px'
-      photo.style.transform = 'translateY('+positionY*0.1+'px)'
+
+      photo.style.transform = 'translateY('+-positionY*0.14+'px)'
 
 
   })
-
-
-
 
 }
 
@@ -36,5 +32,8 @@ function Animation()
 
 if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)))
 {
+  Animation()
+}
+else{
   Animation()
 }
