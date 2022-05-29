@@ -38,10 +38,9 @@ html{
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
-    padding: 1.8em;
-    padding-top: 2.5em;
-    border-top: 5px solid rgb(0, 0, 0);
-    border-bottom: 5px solid rgb(0, 0, 0);
+    padding: 2.2em;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
 
 }
     .text h2{
@@ -49,9 +48,8 @@ html{
         font-size: 2rem;
     }
     .text p, .text ul{
-        font-size: 1.3rem;
+        font-size: 1.15rem;
         line-height: 1.75em;
-        width: 100%;
         text-align: justify;
         max-width: 1200px;
     }
@@ -113,3 +111,104 @@ footer div{
         width: 15rem;
         display: none;
     }
+
+/* ANIMATION */
+.loading{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--greenBackground);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.animation{
+    width: 4em;
+    height: 4em;
+}
+.line{
+    position: absolute;
+    content: '';
+    width: 3em;
+    height: 3em;
+    margin: .5em;
+    border: 2px solid rgba(255, 247, 232, 0.37);
+}
+@keyframes block{
+    0% {transform: none}
+    25% {transform: translate(100%, 0);}
+    50% {transform: translate(100%, 100%);}
+    75% {transform: translate(0, 100%);}
+    100% {transform: none}
+}
+.block{
+    width: 50%;
+    height: 50%;
+    background: var(--lightFont);
+    animation: block 1.5s infinite ease-in-out
+}
+/* ANIMATED OBJECTS */
+.hero img{
+    display: block;
+    position: absolute;
+}
+#right_tree{
+    width: 90vw;
+    right: -20vw;
+    transform: rotateZ(-20deg);
+}
+#left_fern{
+    width: 60vw;
+    left: 0;
+    top: 0;
+}
+#tucan1{
+    width: 15rem;
+    left: 10vw;
+    bottom: -5rem;
+}
+#right_fern{
+    right: 0;
+    width: 30vw;
+    top: 0;
+    opacity: .9;
+}
+/* SCREEN SIZE OPTIMIZATION */
+@media only screen and (min-width:500px)
+{
+    #right_tree{
+        width: 35em;
+        right: -15em;
+        z-index: 1;
+    }
+    #left_fern{
+        width: 20em;
+    }
+    #right_fern{
+        display: none;
+    }
+    .text{
+        padding: 5em;
+        gap: 2em;
+    }
+}
+@media only screen and (min-width:1000px)
+{
+    #tucan2{
+        display: block;
+    }
+}
+@media only screen and (min-width:1200px)
+{
+    #right_tree{
+        width: 50vw;
+    }
+    .text{
+        padding: 10rem;
+        flex-wrap: nowrap;
+    }
+        .text h2{
+            margin-bottom: 3rem;
+        }
+}

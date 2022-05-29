@@ -1,3 +1,9 @@
+// LOADING SCREEN
+const loading = document.querySelector('.loading')
+window.onload=function(){
+    loading.style.display = 'none'
+}
+
 const tucan1 = document.querySelector('#tucan1')
 const tucan2 = document.querySelector('#tucan2')
 const right_tree = document.querySelector('#right_tree')
@@ -34,4 +40,4 @@ else{
   mobile()
 }
 
-photo.addEventListener('click', ()=> {window.open('https://www.dailysabah.com/life/environment/deforestation-of-brazils-amazon-rainforest-hits-record-in-april?gallery_image=undefined#big','_blank');})
+photo.addEventListener('click', ()=> {window.open('https://www.dailysabah.com/','_blank');})
