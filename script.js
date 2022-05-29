@@ -20,7 +20,7 @@ function desktop()
       right_tree.style.transform = 'translateX(' +positionY*0.01+ 'em) rotateZ(-20deg)'
       left_fern.style.transform = 'translateX(' +positionY*(-0.01)+ 'em)'
       
-      photo.style.transform = 'translateY('+-positionY*0.14+'px)'
+      photo.style.transform = 'translateY('+-positionY*0.18+'px)'
   })
 }
 
