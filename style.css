@@ -12,6 +12,10 @@ html{
     background: var(--greenBackground);
     color: var(--lightFont);
 }
+a:link, a:visited, a.hover, a.active{
+    text-decoration: none;
+    color: unset;
+}
 .hero{
     z-index: 1;
     overflow: hidden;
@@ -23,15 +27,36 @@ html{
     justify-content: center;
     align-items: center;
 }
-    a:link, a:visited, a.hover, a.active{
-        text-decoration: none;
-        color: unset;
-    }
     .hero h1{
         color: var(--lightFont);
         font-size: 3rem;
         cursor: pointer;
         z-index: 2;  
+    }
+    .hero img{
+        display: block;
+        position: absolute;
+    }
+    #right_tree{
+        width: 350px;
+        right: -20vw;
+        transform: rotateZ(-20deg);
+    }
+    #left_fern{
+        width: 210px;
+        left: 0;
+        top: 0;
+    }
+    #tucan1{
+        width: 220px;
+        left: 10vw;
+        bottom: -5rem;
+    }
+    #right_fern{
+        right: 0;
+        width: 200px;
+        top: 0;
+        opacity: .9;
     }
 .text{
     width: 100%;
@@ -109,7 +134,7 @@ footer div{
         position: absolute;
         bottom: 50%;
         right: 5rem;
-        width: 15rem;
+        width: 230px;
         display: none;
     }
 
@@ -149,42 +174,16 @@ footer div{
     background: var(--lightFont);
     animation: block 1.5s infinite ease-in-out
 }
-/* ANIMATED OBJECTS */
-.hero img{
-    display: block;
-    position: absolute;
-}
-#right_tree{
-    width: 90vw;
-    right: -20vw;
-    transform: rotateZ(-20deg);
-}
-#left_fern{
-    width: 60vw;
-    left: 0;
-    top: 0;
-}
-#tucan1{
-    width: 15rem;
-    left: 10vw;
-    bottom: -5rem;
-}
-#right_fern{
-    right: 0;
-    width: 30vw;
-    top: 0;
-    opacity: .9;
-}
 /* SCREEN SIZE OPTIMIZATION */
 @media only screen and (min-width:500px)
 {
     #right_tree{
-        width: 35em;
+        width: 550px;
         right: -15em;
         z-index: 1;
     }
     #left_fern{
-        width: 20em;
+        width: 300px;
     }
     #right_fern{
         display: none;
@@ -203,7 +202,7 @@ footer div{
 @media only screen and (min-width:1200px)
 {
     #right_tree{
-        width: 50vw;
+        width: 900px;
     }
     .text{
         padding: 10rem;
