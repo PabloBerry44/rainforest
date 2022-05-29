@@ -103,6 +103,30 @@ a:link, a:visited, a.hover, a.active{
     background: rgb(80, 57, 15);
     color: var(--lightFont);
 }
+.ending{
+    width: 100%;
+    height: 550px;
+    background-position: 0%;
+    background-image: url(./images/deforest2.webp);
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    color: var(--lightFont);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+    .cursor{
+        width: 3px;
+        height: .9em;
+        background: var(--lightFont);
+        left: .1em;
+        bottom: 4px;
+    }
+    .cursorAnimation{
+        animation: blinking 1s steps(2, start) infinite;
+    }
+    @keyframes blinking{100%{visibility: hidden;}}
 footer{
     background: rgb(0, 0, 0);
     color: var(--lightFont);
@@ -138,7 +162,7 @@ footer div{
         display: none;
     }
 
-/* ANIMATION */
+/* ANIMATIONS */
 .loading{
     width: 100%;
     height: 100vh;
@@ -191,6 +215,9 @@ footer div{
     .text{
         padding: 5em;
         gap: 2em;
+    }
+    .ending{
+        font-size: 2.6rem;
     }
 }
 @media only screen and (min-width:1000px)

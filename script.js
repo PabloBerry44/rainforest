@@ -40,4 +40,36 @@ else{
   mobile()
 }
 
-photo.addEventListener('click', ()=> {window.open('https://www.dailysabah.com/','_blank');})
+const endTitle = document.querySelector('.endTitle')
+const endTitleText = endTitle.textContent
+const cursor = document.querySelector('.cursor')
+const ending = document.querySelector('.ending')
+
+tempText =''
+endTitle.innerHTML=''
+i=0
+let animationStarted = false
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if(change.isIntersecting && animationStarted==false) {
+      titleInterval = setInterval(animate, 100)
+      animationStarted=true
+    }
+  });
+}
+function animate()
+{
+  if(i==endTitleText.length-1){
+
+    cursor.classList.add('cursorAnimation')
+    clearInterval(titleInterval)
+  }
+    
+  tempText = tempText+endTitleText[i]
+  endTitle.innerHTML = tempText
+  i++
+}
+let observer = new IntersectionObserver(onEntry, {threshold: [0.7]});
+
+observer.observe(ending)
