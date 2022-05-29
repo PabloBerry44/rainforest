@@ -68,6 +68,7 @@ html{
     .parallax img{
         width: 2000px;
         top: 50%;
+        aspect-ratio: attr(width) / attr(height);
     }
 .light{
     background: rgb(255, 236, 200);
